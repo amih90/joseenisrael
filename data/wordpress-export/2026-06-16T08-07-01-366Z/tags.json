@@ -1,0 +1,1417 @@
+{
+  "restBase": "tags",
+  "count": 32,
+  "total": 32,
+  "totalPages": 1,
+  "fetchedAt": "2026-06-16T08:07:10.694Z",
+  "items": [
+    {
+      "id": 235,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/americanos/",
+      "name": "americanos",
+      "slug": "americanos",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/235",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=235"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 234,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/anglicanos/",
+      "name": "anglicanos",
+      "slug": "anglicanos",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/234",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=234"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/art/",
+      "name": "art",
+      "slug": "art",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/32",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=32"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/book/",
+      "name": "book",
+      "slug": "book",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/33",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=33"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/business/",
+      "name": "business",
+      "slug": "business",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/34",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=34"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/color/",
+      "name": "color",
+      "slug": "color",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/35",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=35"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 233,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/cristiano/",
+      "name": "Cristiano",
+      "slug": "cristiano",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/233",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=233"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 238,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/cristianos/",
+      "name": "Cristianos",
+      "slug": "cristianos",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/238",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=238"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/design/",
+      "name": "design",
+      "slug": "design",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/36",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=36"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/discount/",
+      "name": "discount",
+      "slug": "discount",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/37",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=37"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/fashin/",
+      "name": "fashin",
+      "slug": "fashin",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/38",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=38"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/fashion/",
+      "name": "fashion",
+      "slug": "fashion",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/39",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=39"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/featured/",
+      "name": "featured",
+      "slug": "featured",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/40",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=40"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/finance/",
+      "name": "finance",
+      "slug": "finance",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/41",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=41"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 236,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/israel/",
+      "name": "israel",
+      "slug": "israel",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/236",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=236"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/jerusalem/",
+      "name": "Jerusalem",
+      "slug": "jerusalem",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/18",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=18"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/magazine/",
+      "name": "magazine",
+      "slug": "magazine",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/42",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=42"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/modern/",
+      "name": "modern",
+      "slug": "modern",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/43",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=43"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 231,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/musulman/",
+      "name": "Musulman",
+      "slug": "musulman",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/231",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=231"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/news/",
+      "name": "news",
+      "slug": "news",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/44",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=44"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "count": 2,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/protestantes/",
+      "name": "Protestantes",
+      "slug": "protestantes",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/22",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=22"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/sale/",
+      "name": "sale",
+      "slug": "sale",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/45",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=45"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "count": 1,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/sinagogas/",
+      "name": "Sinagogas",
+      "slug": "sinagogas",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/24",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=24"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/style/",
+      "name": "style",
+      "slug": "style",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/46",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=46"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/the7/",
+      "name": "the7",
+      "slug": "the7",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/47",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=47"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/trends/",
+      "name": "trends",
+      "slug": "trends",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/48",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=48"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/wordpress/",
+      "name": "wordpress",
+      "slug": "wordpress",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/49",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=49"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/world/",
+      "name": "world",
+      "slug": "world",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/50",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=50"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 256,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/%d7%90%d7%9e%d7%a8%d7%99%d7%a7%d7%90%d7%99%d7%9d/",
+      "name": "אמריקאים",
+      "slug": "%d7%90%d7%9e%d7%a8%d7%99%d7%a7%d7%90%d7%99%d7%9d",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/256",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=256"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 255,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/%d7%90%d7%a0%d7%92%d7%9c%d7%99%d7%9d/",
+      "name": "אנגלים",
+      "slug": "%d7%90%d7%a0%d7%92%d7%9c%d7%99%d7%9d",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/255",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=255"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 257,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/%d7%99%d7%a9%d7%a8%d7%90%d7%9c/",
+      "name": "ישראל",
+      "slug": "%d7%99%d7%a9%d7%a8%d7%90%d7%9c",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/257",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=257"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 254,
+      "count": 0,
+      "description": "",
+      "link": "https://josenisraeltours.net/tag/%d7%a4%d7%a8%d7%95%d7%98%d7%a1%d7%98%d7%a0%d7%98%d7%99%d7%9d/",
+      "name": "פרוטסטנטים",
+      "slug": "%d7%a4%d7%a8%d7%95%d7%98%d7%a1%d7%98%d7%a0%d7%98%d7%99%d7%9d",
+      "taxonomy": "post_tag",
+      "meta": [],
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags/254",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/tags"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/taxonomies/post_tag"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/posts?tags=254"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ]
+}

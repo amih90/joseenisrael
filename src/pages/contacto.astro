@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import { site } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assetPath, contentHtml, entrySlug } from '../lib/content';
+
+const pages = await getCollection('pages');
+const contactPage = pages.find((page) => entrySlug(page) === 'contacto');
+const contactHtml = contactPage ? contentHtml(contactPage) : '';
+const contactStyle = `--contact-image: url('${assetPath('/wp-content/uploads/2021/09/20201212_100822-scaled.jpg')}')`;
+---
+
+<BaseLayout title="Contacto" description="Contacta con Jos en Israel por WhatsApp o email.">
+  <main>
+    <section class="page-hero contact-hero" style={contactStyle}>
+      <p class="eyebrow">Contacto</p>
+      <h1>Jos en Israel espera tu mensaje</h1>
+      <p>Cuéntanos fechas, cantidad de viajeros e intereses para armar una ruta a medida.</p>
+      <div class="hero__actions">
+        <a class="button button--primary" href={site.whatsapp}>Abrir WhatsApp</a>
+        <a class="button button--light" href={`mailto:${site.email}`}>Enviar email</a>
+      </div>
+    </section>
+    <section class="section contact-grid">
+      <article>
+        <h2>Datos directos</h2>
+        <p><strong>Telefono</strong><a href={site.whatsapp}>{site.phoneDisplay}</a></p>
+        <p><strong>Email</strong><a href={`mailto:${site.email}`}>{site.email}</a></p>
+        <p><strong>Instagram</strong><a href={site.instagram}>@jose_hollander</a></p>
+      </article>
+      {contactHtml && (
+        <article class="prose">
+          <Fragment set:html={contactHtml} />
+        </article>
+      )}
+    </section>
+  </main>
+</BaseLayout>

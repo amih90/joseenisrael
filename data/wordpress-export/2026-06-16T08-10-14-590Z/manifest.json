@@ -1,0 +1,257 @@
+{
+  "source": "https://josenisraeltours.net",
+  "exportId": "2026-06-16T08-10-14-590Z",
+  "createdAt": "2026-06-16T08:10:14.593Z",
+  "collections": [
+    {
+      "key": "posts",
+      "restBase": "posts",
+      "params": {
+        "_embed": 1
+      },
+      "file": "posts.json",
+      "count": 29,
+      "status": "ok"
+    },
+    {
+      "key": "pages",
+      "restBase": "pages",
+      "params": {
+        "_embed": 1
+      },
+      "file": "pages.json",
+      "count": 15,
+      "status": "ok"
+    },
+    {
+      "key": "categories",
+      "restBase": "categories",
+      "file": "categories.json",
+      "count": 19,
+      "status": "ok"
+    },
+    {
+      "key": "tags",
+      "restBase": "tags",
+      "file": "tags.json",
+      "count": 32,
+      "status": "ok"
+    },
+    {
+      "key": "media",
+      "restBase": "media",
+      "file": "media.json",
+      "count": 393,
+      "status": "ok"
+    },
+    {
+      "key": "users",
+      "restBase": "users",
+      "file": "users.json",
+      "count": 2,
+      "status": "ok"
+    },
+    {
+      "key": "menu-items",
+      "restBase": "menu-items",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "nav_menu_item",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/menu-items?per_page=100&page=1&_embed=1 failed: 401 Unauthorized"
+    },
+    {
+      "key": "templates",
+      "restBase": "templates",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_template",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/templates?per_page=100&page=1&_embed=1 failed: 401 Unauthorized"
+    },
+    {
+      "key": "template-parts",
+      "restBase": "template-parts",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_template_part",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/template-parts?per_page=100&page=1&_embed=1 failed: 401 Unauthorized"
+    },
+    {
+      "key": "global-styles",
+      "restBase": "global-styles",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_global_styles",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/global-styles?per_page=100&page=1&_embed=1 failed: 404 Not Found"
+    },
+    {
+      "key": "navigation",
+      "restBase": "navigation",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_navigation",
+      "file": "navigation.json",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "key": "font-families",
+      "restBase": "font-families",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_font_family",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/font-families?per_page=100&page=1&_embed=1 failed: 401 Unauthorized"
+    },
+    {
+      "key": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+      "restBase": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "wp_font_face",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/font-families/(?P%3Cfont_family_id%3E%5B%5Cd%5D+%29%2Ffont-faces=&per_page=100&page=1&_embed=1 failed: 404 Not Found"
+    },
+    {
+      "key": "elementor_library",
+      "restBase": "elementor_library",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "elementor_library",
+      "status": "failed",
+      "error": "GET https://josenisraeltours.net/wp-json/wp/v2/elementor_library?per_page=100&page=1&_embed=1 failed: 401 Unauthorized"
+    },
+    {
+      "key": "product",
+      "restBase": "product",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "product",
+      "file": "product.json",
+      "count": 0,
+      "status": "ok"
+    },
+    {
+      "key": "dt_portfolio",
+      "restBase": "dt_portfolio",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "dt_portfolio",
+      "file": "dt_portfolio.json",
+      "count": 6,
+      "status": "ok"
+    },
+    {
+      "key": "dt_gallery",
+      "restBase": "dt_gallery",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "dt_gallery",
+      "file": "dt_gallery.json",
+      "count": 1,
+      "status": "ok"
+    },
+    {
+      "key": "dt_team",
+      "restBase": "dt_team",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "dt_team",
+      "file": "dt_team.json",
+      "count": 3,
+      "status": "ok"
+    },
+    {
+      "key": "dt_testimonials",
+      "restBase": "dt_testimonials",
+      "params": {
+        "_embed": 1
+      },
+      "sourceType": "dt_testimonials",
+      "file": "dt_testimonials.json",
+      "count": 0,
+      "status": "ok"
+    }
+  ],
+  "sitemaps": [
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-posts-post-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-posts-post-1.xml.xml",
+      "count": 29,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-posts-page-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-posts-page-1.xml.xml",
+      "count": 15,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-posts-dt_portfolio-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-posts-dt_portfolio-1.xml.xml",
+      "count": 6,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-posts-dt_gallery-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-posts-dt_gallery-1.xml.xml",
+      "count": 1,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-posts-dt_team-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-posts-dt_team-1.xml.xml",
+      "count": 3,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-taxonomies-category-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-taxonomies-category-1.xml.xml",
+      "count": 12,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-taxonomies-post_tag-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-taxonomies-post_tag-1.xml.xml",
+      "count": 9,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-taxonomies-wpa-stats-type-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-taxonomies-wpa-stats-type-1.xml.xml",
+      "count": 7,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-taxonomies-dt_portfolio_category-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-taxonomies-dt_portfolio_category-1.xml.xml",
+      "count": 4,
+      "status": "ok"
+    },
+    {
+      "url": "https://josenisraeltours.net/wp-sitemap-users-1.xml",
+      "file": "sitemaps/josenisraeltours.net-wp-sitemap-users-1.xml.xml",
+      "count": 2,
+      "status": "ok"
+    }
+  ],
+  "htmlSnapshots": {
+    "count": 88,
+    "file": "html-snapshots.json"
+  }
+}

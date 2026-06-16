@@ -1,0 +1,111 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../components/PostCard.astro';
+import { galleryImages } from '../data/gallery';
+import { site } from '../data/site';
+import { teamMembers } from '../data/team';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assetPath, contentHtml, displayName, entrySlug, sortedByDate, withBase } from '../lib/content';
+
+const posts = sortedByDate(await getCollection('posts'));
+const latestPosts = posts.slice(0, 3);
+const pages = await getCollection('pages');
+const homePage = pages.find((page) => entrySlug(page) === 'home');
+const homeHtml = homePage ? contentHtml(homePage) : '';
+const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.82), rgba(20, 47, 45, 0.38)), url('${assetPath(site.heroImage)}')`;
+---
+
+<BaseLayout title={site.name} description={site.description} image={site.heroImage}>
+  <main>
+    <section class="hero" style={heroStyle}>
+      <div class="hero__content">
+        <p class="eyebrow">Guias locales en Tierra Santa</p>
+        <h1>Viajes por Israel con mirada cercana</h1>
+        <p>{site.description}</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href={site.whatsapp}>Planear por WhatsApp</a>
+          <a class="button button--light" href={withBase('/viajes/')}>Ver viajes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--intro">
+      <div class="section-heading">
+        <p class="eyebrow">Contenido migrado</p>
+        <h2>Historias, rutas y lugares santos del sitio original</h2>
+      </div>
+      <div class="stat-grid">
+        <div><strong>{posts.length}</strong><span>articulos</span></div>
+        <div><strong>{galleryImages.length}</strong><span>imagenes destacadas</span></div>
+        <div><strong>{teamMembers.length}</strong><span>creadores</span></div>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="section-heading">
+        <p class="eyebrow">Ultimos relatos</p>
+        <h2>Recorridos para entrar en la historia</h2>
+      </div>
+      <div class="post-grid post-grid--home">
+        {latestPosts.map((post, index) => <PostCard post={post} featured={index === 0} />)}
+      </div>
+    </section>
+
+    <section class="section gallery-strip">
+      <div class="section-heading">
+        <p class="eyebrow">Galeria</p>
+        <h2>Momentos de los recorridos</h2>
+      </div>
+      <div class="gallery-preview">
+        {galleryImages.slice(0, 6).map((image) => (
+          <a href={assetPath(image.src)}>
+            <img src={assetPath(image.thumbnail)} alt={image.title || 'Galeria'} loading="lazy" />
+          </a>
+        ))}
+      </div>
+      <a class="button button--secondary" href={withBase('/galeria/')}>Abrir galeria</a>
+    </section>
+
+    <section class="section team-band">
+      <div class="section-heading">
+        <p class="eyebrow">Equipo</p>
+        <h2>Creadores del proyecto</h2>
+      </div>
+      <div class="team-row">
+        {teamMembers.map((member) => (
+          <article class="person-chip">
+            <span>{displayName(member.name).charAt(0)}</span>
+            <div>
+              <h3>{displayName(member.name)}</h3>
+              <p>{member.role}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    {homeHtml && (
+      <section class="section content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Archivo original</p>
+          <h2>Mas contenido de portada</h2>
+        </div>
+        <div class="prose">
+          <Fragment set:html={homeHtml} />
+        </div>
+      </section>
+    )}
+
+    <section class="section contact-band">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos de tu viaje</h2>
+        <p>Escribenos por WhatsApp o email para preparar una ruta personal, familiar o grupal.</p>
+      </div>
+      <div class="hero__actions">
+        <a class="button button--primary" href={site.whatsapp}>WhatsApp</a>
+        <a class="button button--secondary" href={`mailto:${site.email}`}>Email</a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>

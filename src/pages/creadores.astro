@@ -1,0 +1,27 @@
+---
+import { site } from '../data/site';
+import { teamMembers } from '../data/team';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assetPath, displayName } from '../lib/content';
+---
+
+<BaseLayout title="Creadores" description="Equipo de Jos en Israel.">
+  <main>
+    <section class="page-hero page-hero--compact">
+      <p class="eyebrow">Creadores</p>
+      <h1>El equipo detras de los recorridos</h1>
+      <p>Perfiles migrados desde el sitio original y listos para ampliar con biografias completas.</p>
+    </section>
+    <section class="section team-grid">
+      {teamMembers.map((member) => (
+        <article class="team-card">
+          {member.image ? <img src={assetPath(member.image)} alt={displayName(member.name)} /> : <span>{displayName(member.name).charAt(0)}</span>}
+          <h2>{displayName(member.name)}</h2>
+          <p>{member.role}</p>
+          {member.bio && <p>{member.bio}</p>}
+          {member.email ? <a class="text-link" href={`mailto:${member.email}`}>{member.email}</a> : <a class="text-link" href={site.whatsapp}>Contactar</a>}
+        </article>
+      ))}
+    </section>
+  </main>
+</BaseLayout>

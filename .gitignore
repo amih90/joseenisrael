@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+npm-debug.log*
+local-credentials.*
+*.local
+
+# Keep the full WordPress media download local; referenced site assets are force-added.
+public/wp-content/uploads/**

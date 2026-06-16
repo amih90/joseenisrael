@@ -1,0 +1,57 @@
+---
+import { navigation } from '../data/navigation';
+import { site } from '../data/site';
+import { assetPath, withBase } from '../lib/content';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+}
+
+const { title = site.title, description = site.description, image = site.heroImage } = Astro.props;
+const pageTitle = title === site.name || title === site.title ? site.title : `${title} | ${site.name}`;
+const openGraphImage = new URL(assetPath(image), Astro.url).href;
+---
+
+<!doctype html>
+<html lang={site.language}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={openGraphImage} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href={withBase('/')} aria-label={site.name}>
+        <img src={assetPath('/wp-content/uploads/2021/09/logo-1-200x200.png')} alt="" />
+        <span>{site.name}</span>
+      </a>
+      <nav class="site-nav" aria-label="Principal">
+        {navigation.map((item) => <a href={withBase(item.href)}>{item.label}</a>)}
+      </nav>
+      <a class="header-cta" href={site.whatsapp}>WhatsApp</a>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <div>
+        <p class="footer-title">{site.name}</p>
+        <p>{site.description}</p>
+      </div>
+      <div class="footer-links">
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        <a href={site.whatsapp}>{site.phoneDisplay}</a>
+        <a href={site.facebook}>Facebook</a>
+        <a href={site.instagram}>Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>

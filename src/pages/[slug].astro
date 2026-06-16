@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content';
+import { site } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { contentHtml, entrySlug } from '../lib/content';
+
+export async function getStaticPaths() {
+  const reservedPages = new Set(['home', 'blog', 'galeria', 'contacto', 'creadores']);
+  const pages = await getCollection('pages', ({ data }) => data.status === 'rendered');
+  return pages
+    .filter((page) => !reservedPages.has(entrySlug(page)))
+    .map((page) => ({ params: { slug: entrySlug(page) }, props: { page } }));
+}
+
+const { page } = Astro.props;
+const pageHtml = contentHtml(page);
+---
+
+<BaseLayout title={page.data.title} description={page.data.description || site.description}>
+  <main>
+    <section class="page-hero page-hero--compact">
+      <p class="eyebrow">{site.name}</p>
+      <h1>{page.data.title}</h1>
+      {page.data.description && <p>{page.data.description}</p>}
+    </section>
+    <section class="section content-section">
+      <div class="prose">
+        <Fragment set:html={pageHtml} />
+      </div>
+    </section>
+  </main>
+</BaseLayout>

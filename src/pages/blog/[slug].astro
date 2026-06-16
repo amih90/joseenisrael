@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../components/PostCard.astro';
+import { site } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { assetPath, contentHtml, entrySlug, formatDate, sortedByDate } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map((post) => ({ params: { slug: entrySlug(post) }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const postHtml = contentHtml(post);
+const allPosts = sortedByDate(await getCollection('posts'));
+const relatedPosts = allPosts.filter((item) => item.id !== post.id).slice(0, 3);
+---
+
+<BaseLayout title={post.data.title} description={post.data.description || site.description} image={post.data.heroImage || site.heroImage}>
+  <main>
+    <article>
+      <header class="article-hero">
+        <div>
+          <p class="eyebrow">{formatDate(post.data.pubDate)}</p>
+          <h1>{post.data.title}</h1>
+          {post.data.description && <p>{post.data.description}</p>}
+        </div>
+        {post.data.heroImage && <img src={assetPath(post.data.heroImage)} alt="" />}
+      </header>
+      <div class="article-shell">
+        <aside class="article-meta">
+          {post.data.author && <p><strong>Autor</strong><span>{post.data.author}</span></p>}
+          {post.data.categories?.length > 0 && <p><strong>Categoria</strong><span>{post.data.categories.join(', ')}</span></p>}
+          {post.data.tags?.length > 0 && <p><strong>Tags</strong><span>{post.data.tags.join(', ')}</span></p>}
+        </aside>
+        <div class="prose article-body">
+          <Fragment set:html={postHtml} />
+        </div>
+      </div>
+    </article>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Tambien puede interesarte</p>
+        <h2>Mas relatos</h2>
+      </div>
+      <div class="post-grid">
+        {relatedPosts.map((item) => <PostCard post={item} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

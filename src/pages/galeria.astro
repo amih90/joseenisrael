@@ -1,0 +1,26 @@
+---
+import { galleryImages } from '../data/gallery';
+import { site } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assetPath } from '../lib/content';
+---
+
+<BaseLayout title="Galeria" description="Imagenes de recorridos y lugares de Israel." image={galleryImages[0]?.src || site.heroImage}>
+  <main>
+    <section class="page-hero page-hero--compact">
+      <p class="eyebrow">Galeria</p>
+      <h1>Recorridos en imagenes</h1>
+      <p>Una seleccion migrada desde la galeria original de Jos en Israel.</p>
+    </section>
+    <section class="section">
+      <div class="masonry-gallery">
+        {galleryImages.map((image) => (
+          <a href={assetPath(image.src)}>
+            <img src={assetPath(image.thumbnail)} alt={image.title || 'Imagen de Israel'} loading="lazy" />
+            {image.title && <span>{image.title}</span>}
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

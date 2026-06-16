@@ -1,0 +1,24 @@
+{
+  "name": "joseenisrael",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "pages:prune": "node scripts/prune-pages-assets.mjs dist",
+    "preview": "astro preview",
+    "wp:export": "node scripts/export-wordpress.mjs",
+    "wp:media": "node scripts/download-media.mjs",
+    "wp:transform": "node scripts/transform-wordpress.mjs",
+    "wp:migrate": "npm run wp:export && npm run wp:media && npm run wp:transform"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "@astrojs/sitemap": "latest",
+    "astro": "latest",
+    "cheerio": "^1.2.0",
+    "turndown": "^7.2.4",
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "exportDir": "C:\\ws\\github\\amih90\\joseenisrael\\data\\wordpress-export\\2026-06-16T08-10-14-590Z",
+  "transformedAt": "2026-06-16T08:22:42.217Z",
+  "counts": {
+    "posts": 29,
+    "pages": 15,
+    "renderedPages": 10,
+    "galleryImages": 29,
+    "teamMembers": 3
+  },
+  "pages": [
+    {
+      "id": 43907,
+      "title": "צור קשר",
+      "slug": "%d7%a6%d7%95%d7%a8-%d7%a7%d7%a9%d7%a8",
+      "renderedSlug": "contenido",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/%d7%a6%d7%95%d7%a8-%d7%a7%d7%a9%d7%a8/"
+    },
+    {
+      "id": 43905,
+      "title": "דף הבית",
+      "slug": "%d7%93%d7%a3-%d7%94%d7%91%d7%99%d7%aa",
+      "renderedSlug": "contenido",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/%d7%93%d7%a3-%d7%94%d7%91%d7%99%d7%aa/"
+    },
+    {
+      "id": 43903,
+      "title": "גלריה",
+      "slug": "%d7%92%d7%9c%d7%a8%d7%99%d7%94",
+      "renderedSlug": "contenido",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/%d7%92%d7%9c%d7%a8%d7%99%d7%94/"
+    },
+    {
+      "id": 43390,
+      "title": "Viajes",
+      "slug": "viajes",
+      "renderedSlug": "viajes",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/viajes/"
+    },
+    {
+      "id": 43360,
+      "title": "Contacto",
+      "slug": "contacte-con-nosotros",
+      "renderedSlug": "contacto",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/contacte-con-nosotros/"
+    },
+    {
+      "id": 494,
+      "title": "Agricultura",
+      "slug": "nuestra-tierra",
+      "renderedSlug": "agricultura",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/nuestra-tierra/"
+    },
+    {
+      "id": 475,
+      "title": "Nuestros Cultos",
+      "slug": "elementor-475",
+      "renderedSlug": "nuestros-cultos",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/elementor-475/"
+    },
+    {
+      "id": 345,
+      "title": "Galeria",
+      "slug": "galeria",
+      "renderedSlug": "galeria",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/galeria/"
+    },
+    {
+      "id": 292,
+      "title": "Creadores",
+      "slug": "contacto",
+      "renderedSlug": "creadores",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/contacto/"
+    },
+    {
+      "id": 138,
+      "title": "Blog",
+      "slug": "blog",
+      "renderedSlug": "blog",
+      "status": "archived",
+      "link": "https://josenisraeltours.net/blog/"
+    },
+    {
+      "id": 127,
+      "title": "Home",
+      "slug": "home",
+      "renderedSlug": "home",
+      "status": "rendered",
+      "link": "https://josenisraeltours.net/"
+    },
+    {
+      "id": 11,
+      "title": "My account",
+      "slug": "my-account",
+      "renderedSlug": "my-account",
+      "status": "archived",
+      "link": "https://josenisraeltours.net/my-account/"
+    },
+    {
+      "id": 8,
+      "title": "Shop",
+      "slug": "shop",
+      "renderedSlug": "shop",
+      "status": "archived",
+      "link": "https://josenisraeltours.net/shop/"
+    },
+    {
+      "id": 3,
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "renderedSlug": "privacy-policy",
+      "status": "archived",
+      "link": "https://josenisraeltours.net/privacy-policy/"
+    },
+    {
+      "id": 15686,
+      "title": "Home",
+      "slug": "home-main",
+      "renderedSlug": "home",
+      "status": "archived",
+      "link": "https://josenisraeltours.net/home-main/"
+    }
+  ],
+  "posts": [
+    {
+      "id": 43980,
+      "title": "La Tumba de los Patriarcas",
+      "slug": "elementor-43980",
+      "link": "https://josenisraeltours.net/2022/11/19/elementor-43980/"
+    },
+    {
+      "id": 43937,
+      "title": "Un dia por Acre (Akko)",
+      "slug": "un-dia-por-acre-akko",
+      "link": "https://josenisraeltours.net/2022/07/29/un-dia-por-acre-akko/"
+    },
+    {
+      "id": 43931,
+      "title": "con “El Lugar De su Presencia” en Israel",
+      "slug": "con-el-lugar-de-su-presencia-en-israel",
+      "link": "https://josenisraeltours.net/2022/07/13/con-el-lugar-de-su-presencia-en-israel/"
+    },
+    {
+      "id": 43812,
+      "title": "Tomates Cherry",
+      "slug": "tomates-cherry",
+      "link": "https://josenisraeltours.net/2021/11/25/tomates-cherry/"
+    },
+    {
+      "id": 43803,
+      "title": "El Santo Sepulcro",
+      "slug": "el-santo-sepulcro",
+      "link": "https://josenisraeltours.net/2021/11/20/el-santo-sepulcro/"
+    },
+    {
+      "id": 43786,
+      "title": "Siglo XIX",
+      "slug": "siglo-xix",
+      "link": "https://josenisraeltours.net/2021/11/11/siglo-xix/"
+    },
+    {
+      "id": 43677,
+      "title": "Frontera de paz",
+      "slug": "frontera-de-paz",
+      "link": "https://josenisraeltours.net/2021/10/30/frontera-de-paz/"
+    },
+    {
+      "id": 43652,
+      "title": "Las paredes que Hablan",
+      "slug": "43652",
+      "link": "https://josenisraeltours.net/2021/10/25/43652/"
+    },
+    {
+      "id": 43635,
+      "title": "Tel Aviv, la ciudad que nunca duerme",
+      "slug": "tel-aviv-la-ciudad-que-nunca-duerme",
+      "link": "https://josenisraeltours.net/2021/10/23/tel-aviv-la-ciudad-que-nunca-duerme/"
+    },
+    {
+      "id": 43627,
+      "title": "Ramla, Ciudad musulmana",
+      "slug": "ramla-ciudad-musulmana",
+      "link": "https://josenisraeltours.net/2021/10/22/ramla-ciudad-musulmana/"
+    },
+    {
+      "id": 43609,
+      "title": "Le esplanada del Templo",
+      "slug": "le-esplanada-del-templo",
+      "link": "https://josenisraeltours.net/2021/10/20/le-esplanada-del-templo/"
+    },
+    {
+      "id": 43587,
+      "title": "La frontera Norte",
+      "slug": "la-frontera-norte",
+      "link": "https://josenisraeltours.net/2021/10/18/la-frontera-norte/"
+    },
+    {
+      "id": 43578,
+      "title": "Aqui cada uno encuentra lo que busca, y mas…",
+      "slug": "aqui-cada-uno-encuentra-lo-que-busca-y-mas",
+      "link": "https://josenisraeltours.net/2021/10/18/aqui-cada-uno-encuentra-lo-que-busca-y-mas/"
+    },
+    {
+      "id": 43549,
+      "title": "Un Dia por Yafo",
+      "slug": "yafo",
+      "link": "https://josenisraeltours.net/2021/10/16/yafo/"
+    },
+    {
+      "id": 43534,
+      "title": "Scitopolis, Beit Shean",
+      "slug": "scitopolis-beit-shean",
+      "link": "https://josenisraeltours.net/2021/10/10/scitopolis-beit-shean/"
+    },
+    {
+      "id": 43514,
+      "title": "Cuidando el Camino",
+      "slug": "cuidando-el-camino",
+      "link": "https://josenisraeltours.net/2021/10/09/cuidando-el-camino/"
+    },
+    {
+      "id": 43496,
+      "title": "En la esplanada del templo",
+      "slug": "en-la-esplanada-del-templo",
+      "link": "https://josenisraeltours.net/2021/09/29/en-la-esplanada-del-templo/"
+    },
+    {
+      "id": 43462,
+      "title": "Sueños en Jerusalem",
+      "slug": "suenos-en-jerusalem",
+      "link": "https://josenisraeltours.net/2021/09/28/suenos-en-jerusalem/"
+    },
+    {
+      "id": 43412,
+      "title": "1948 Liberar Jerusalem",
+      "slug": "la-guerra-por-jerusalem-1948",
+      "link": "https://josenisraeltours.net/2021/09/18/la-guerra-por-jerusalem-1948/"
+    },
+    {
+      "id": 43402,
+      "title": "En el Camino a Jerusalem",
+      "slug": "en-el-camino-a-jerusalem",
+      "link": "https://josenisraeltours.net/2021/09/17/en-el-camino-a-jerusalem/"
+    },
+    {
+      "id": 598,
+      "title": "Legado De los Cruzados",
+      "slug": "legado-de-los-cruzados",
+      "link": "https://josenisraeltours.net/2021/09/16/legado-de-los-cruzados/"
+    },
+    {
+      "id": 459,
+      "title": "Despertar en el desierto",
+      "slug": "despertar",
+      "link": "https://josenisraeltours.net/2021/09/11/despertar/"
+    },
+    {
+      "id": 453,
+      "title": "Mexicanos en camello.",
+      "slug": "m",
+      "link": "https://josenisraeltours.net/2021/09/11/m/"
+    },
+    {
+      "id": 324,
+      "title": "Sinagoga “Hurva”",
+      "slug": "sinangoga-hurva",
+      "link": "https://josenisraeltours.net/2021/09/10/sinangoga-hurva/"
+    },
+    {
+      "id": 275,
+      "title": "Zichron Yakov",
+      "slug": "zichron-yakov",
+      "link": "https://josenisraeltours.net/2021/09/09/zichron-yakov/"
+    },
+    {
+      "id": 248,
+      "title": "La iglesia del Redentor",
+      "slug": "la-iglesia-del-redentor",
+      "link": "https://josenisraeltours.net/2021/09/09/la-iglesia-del-redentor/"
+    },
+    {
+      "id": 164,
+      "title": "El lago de Galilea",
+      "slug": "elementor-164",
+      "link": "https://josenisraeltours.net/2021/09/09/elementor-164/"
+    },
+    {
+      "id": 103,
+      "title": "8 Dias en Tierra Santa",
+      "slug": "8-dias-en-tierra-santa",
+      "link": "https://josenisraeltours.net/2021/09/07/8-dias-en-tierra-santa/"
+    },
+    {
+      "id": 1,
+      "title": "La puerta de Yafo",
+      "slug": "hello-world",
+      "link": "https://josenisraeltours.net/2021/08/24/hello-world/"
+    }
+  ]
+}

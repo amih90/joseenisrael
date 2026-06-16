@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../components/PostCard.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { sortedByDate } from '../../lib/content';
+
+const posts = sortedByDate(await getCollection('posts'));
+const categories = [...new Set(posts.flatMap((post) => post.data.categories || []))].sort();
+---
+
+<BaseLayout title="Blog" description="Relatos y rutas migradas desde Jos en Israel.">
+  <main>
+    <section class="page-hero page-hero--compact">
+      <p class="eyebrow">Blog</p>
+      <h1>Relatos de viaje por Israel</h1>
+      <p>Archivo completo de articulos, lugares y recorridos del sitio WordPress original.</p>
+    </section>
+    <section class="section">
+      <div class="filter-row">
+        {categories.map((category) => <span>{category}</span>)}
+      </div>
+      <div class="post-grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

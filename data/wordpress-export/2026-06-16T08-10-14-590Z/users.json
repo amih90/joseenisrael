@@ -1,0 +1,117 @@
+{
+  "restBase": "users",
+  "count": 2,
+  "total": 2,
+  "totalPages": 1,
+  "fetchedAt": "2026-06-16T08:10:35.574Z",
+  "items": [
+    {
+      "id": 2,
+      "name": "Jose Hollander",
+      "url": "",
+      "description": "",
+      "link": "https://josenisraeltours.net/author/joselito/",
+      "slug": "joselito",
+      "avatar_urls": {
+        "24": "https://secure.gravatar.com/avatar/97891233fc12835e9ec68e61781fb6e6?s=24&d=mm&r=g",
+        "48": "https://secure.gravatar.com/avatar/97891233fc12835e9ec68e61781fb6e6?s=48&d=mm&r=g",
+        "96": "https://secure.gravatar.com/avatar/97891233fc12835e9ec68e61781fb6e6?s=96&d=mm&r=g"
+      },
+      "meta": [],
+      "is_super_admin": false,
+      "woocommerce_meta": {
+        "activity_panel_inbox_last_read": "1633174080611",
+        "activity_panel_reviews_last_read": "",
+        "categories_report_columns": "",
+        "coupons_report_columns": "",
+        "customers_report_columns": "",
+        "orders_report_columns": "",
+        "products_report_columns": "",
+        "revenue_report_columns": "",
+        "taxes_report_columns": "",
+        "variations_report_columns": "",
+        "dashboard_sections": "",
+        "dashboard_chart_type": "",
+        "dashboard_chart_interval": "",
+        "dashboard_leaderboard_rows": "",
+        "homepage_layout": "",
+        "homepage_stats": "",
+        "task_list_tracked_started_tasks": "",
+        "help_panel_highlight_shown": "",
+        "android_app_banner_dismissed": ""
+      },
+      "elementor_introduction": "",
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/users/2",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/users"
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "name": "YanayAdmin",
+      "url": "",
+      "description": "",
+      "link": "https://josenisraeltours.net/author/yanayadmin/",
+      "slug": "yanayadmin",
+      "avatar_urls": {
+        "24": "https://secure.gravatar.com/avatar/86b487e9b93c7627c930624bd50f6f63?s=24&d=mm&r=g",
+        "48": "https://secure.gravatar.com/avatar/86b487e9b93c7627c930624bd50f6f63?s=48&d=mm&r=g",
+        "96": "https://secure.gravatar.com/avatar/86b487e9b93c7627c930624bd50f6f63?s=96&d=mm&r=g"
+      },
+      "meta": [],
+      "is_super_admin": false,
+      "woocommerce_meta": {
+        "activity_panel_inbox_last_read": "",
+        "activity_panel_reviews_last_read": "",
+        "categories_report_columns": "",
+        "coupons_report_columns": "",
+        "customers_report_columns": "",
+        "orders_report_columns": "",
+        "products_report_columns": "",
+        "revenue_report_columns": "",
+        "taxes_report_columns": "",
+        "variations_report_columns": "",
+        "dashboard_sections": "",
+        "dashboard_chart_type": "",
+        "dashboard_chart_interval": "",
+        "dashboard_leaderboard_rows": "",
+        "homepage_layout": "",
+        "homepage_stats": "",
+        "task_list_tracked_started_tasks": "",
+        "help_panel_highlight_shown": "",
+        "android_app_banner_dismissed": ""
+      },
+      "elementor_introduction": "",
+      "_links": {
+        "self": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/users/1",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://josenisraeltours.net/wp-json/wp/v2/users"
+          }
+        ]
+      }
+    }
+  ]
+}
