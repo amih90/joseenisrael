@@ -5,7 +5,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { buildLegacyUrlMap, contentHtml, entrySlug } from '../lib/content';
 
 export async function getStaticPaths() {
-  const reservedPages = new Set(['home', 'blog', 'galeria', 'contacto', 'creadores']);
+  const reservedPages = new Set(['home', 'blog', 'galeria', 'contacto', 'creadores', 'viajes']);
   const pages = await getCollection('pages', ({ data }) => data.status === 'rendered');
   return pages
     .filter((page) => !reservedPages.has(entrySlug(page)))

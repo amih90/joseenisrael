@@ -1,0 +1,91 @@
+---
+import { getCollection } from 'astro:content';
+import { site } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { assetPath, formatDate, postUrl, sortedByDate } from '../lib/content';
+
+const posts = sortedByDate(await getCollection('posts'));
+const tripPosts = posts.filter((post) => post.data.categories?.includes('Viajes'));
+const [featuredTrip, ...otherTrips] = tripPosts;
+const heroImage = featuredTrip?.data.heroImage || site.heroImage;
+const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.88), rgba(20, 47, 45, 0.34)), url('${assetPath(heroImage)}')`;
+const places = [...new Set(tripPosts.flatMap((post) => post.data.categories || []).filter((category) => category !== 'Viajes' && category !== 'Sin categorizar'))];
+---
+
+<BaseLayout title="Viajes" description="Rutas y experiencias por Israel con guias locales de habla hispana." image={heroImage}>
+  <main>
+    <section class="trips-hero" style={heroStyle}>
+      <div class="trips-hero__content">
+        <p class="eyebrow">Viajes por Israel</p>
+        <h1>Rutas con historia, presencia y cercania</h1>
+        <p>Recorridos migrados del sitio original, ahora organizados como una experiencia estatica y limpia para explorar cada relato dentro del sitio.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href={site.whatsapp}>Planear por WhatsApp</a>
+          {featuredTrip && <a class="button button--light" href={postUrl(featuredTrip)}>Ver ruta destacada</a>}
+        </div>
+      </div>
+    </section>
+
+    <section class="section trips-overview">
+      <div class="section-heading">
+        <p class="eyebrow">Archivo de viajes</p>
+        <h2>Elegir un recorrido</h2>
+        <p>Cada tarjeta abre una pagina local del sitio estatico, sin saltar al WordPress original.</p>
+      </div>
+      <div class="trip-stats" aria-label="Resumen de viajes">
+        <div><strong>{tripPosts.length}</strong><span>rutas locales</span></div>
+        <div><strong>{places.length || 1}</strong><span>zonas destacadas</span></div>
+        <div><strong>100%</strong><span>links internos</span></div>
+      </div>
+    </section>
+
+    {featuredTrip && (
+      <section class="section featured-trip-section">
+        <article class="featured-trip-card">
+          {featuredTrip.data.heroImage && (
+            <a href={postUrl(featuredTrip)} class="featured-trip-card__image" aria-label={featuredTrip.data.title}>
+              <img src={assetPath(featuredTrip.data.heroImage)} alt="" loading="lazy" />
+            </a>
+          )}
+          <div class="featured-trip-card__body">
+            <p class="eyebrow">Ruta destacada</p>
+            <h2>{featuredTrip.data.title}</h2>
+            {featuredTrip.data.description && <p>{featuredTrip.data.description}</p>}
+            <div class="trip-meta-row">
+              <span>{formatDate(featuredTrip.data.pubDate)}</span>
+              {featuredTrip.data.categories?.filter((category) => category !== 'Viajes').map((category) => <span>{category}</span>)}
+            </div>
+            <a class="button button--secondary" href={postUrl(featuredTrip)}>Abrir recorrido</a>
+          </div>
+        </article>
+      </section>
+    )}
+
+    <section class="section trips-section">
+      <div class="section-heading">
+        <p class="eyebrow">Mas rutas</p>
+        <h2>Recorridos disponibles</h2>
+      </div>
+      <div class="trip-card-grid">
+        {otherTrips.map((post) => (
+          <article class="trip-card">
+            {post.data.heroImage && (
+              <a href={postUrl(post)} class="trip-card__image" aria-label={post.data.title}>
+                <img src={assetPath(post.data.heroImage)} alt="" loading="lazy" />
+              </a>
+            )}
+            <div class="trip-card__body">
+              <p class="meta">{formatDate(post.data.pubDate)}</p>
+              <h3><a href={postUrl(post)}>{post.data.title}</a></h3>
+              {post.data.description && <p>{post.data.description}</p>}
+              <div class="trip-meta-row">
+                {post.data.categories?.filter((category) => category !== 'Viajes' && category !== 'Sin categorizar').slice(0, 2).map((category) => <span>{category}</span>)}
+              </div>
+              <a class="text-link" href={postUrl(post)}>Ver recorrido</a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
