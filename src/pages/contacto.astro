@@ -2,11 +2,13 @@
 import { getCollection } from 'astro:content';
 import { site } from '../data/site';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { assetPath, contentHtml, entrySlug } from '../lib/content';
+import { assetPath, buildLegacyUrlMap, contentHtml, entrySlug } from '../lib/content';
 
 const pages = await getCollection('pages');
+const posts = await getCollection('posts');
+const legacyUrlMap = buildLegacyUrlMap([...posts, ...pages]);
 const contactPage = pages.find((page) => entrySlug(page) === 'contacto');
-const contactHtml = contactPage ? contentHtml(contactPage) : '';
+const contactHtml = contactPage ? contentHtml(contactPage, legacyUrlMap) : '';
 const contactStyle = `--contact-image: url('${assetPath('/wp-content/uploads/2021/09/20201212_100822-scaled.jpg')}')`;
 ---
 

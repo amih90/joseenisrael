@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import PostCard from '../../components/PostCard.astro';
 import { site } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { assetPath, contentHtml, entrySlug, formatDate, sortedByDate } from '../../lib/content';
+import { assetPath, buildLegacyUrlMap, contentHtml, entrySlug, formatDate, sortedByDate } from '../../lib/content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -11,8 +11,10 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const postHtml = contentHtml(post);
 const allPosts = sortedByDate(await getCollection('posts'));
+const pages = await getCollection('pages');
+const legacyUrlMap = buildLegacyUrlMap([...allPosts, ...pages]);
+const postHtml = contentHtml(post, legacyUrlMap);
 const relatedPosts = allPosts.filter((item) => item.id !== post.id).slice(0, 3);
 ---
 

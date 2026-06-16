@@ -15,10 +15,67 @@ export function assetPath(path: string) {
   return withBase(path);
 }
 
-export function contentHtml(entry: { rendered?: { html?: string } }) {
-  return (entry.rendered?.html || '').replace(/\b(src|href)=(['"])(\/(?!\/)[^'"]*)\2/g, (_match, attribute, quote, path) => {
-    return `${attribute}=${quote}${withBase(path)}${quote}`;
+const wordpressHosts = new Set(['josenisraeltours.net', 'www.josenisraeltours.net']);
+const wordpressUrlPattern = /https?:\/\/(?:www\.)?josenisraeltours\.net\/[^\s<>"]+/gi;
+
+type LegacyEntry = {
+  id: string;
+  collection?: string;
+  data: {
+    originalUrl?: string;
+    legacyPath?: string;
+  };
+};
+
+function legacyUrlKey(value?: string) {
+  if (!value) return undefined;
+
+  try {
+    const url = new URL(value, 'https://josenisraeltours.net');
+    if (!wordpressHosts.has(url.hostname)) return undefined;
+
+    const pathname = url.pathname.replace(/\/+$/, '') || '/';
+    return pathname.toLowerCase();
+  } catch {
+    return undefined;
+  }
+}
+
+function localUrlForEntry(entry: LegacyEntry) {
+  return entry.collection === 'posts' ? postUrl(entry) : pageUrl(entry);
+}
+
+export function buildLegacyUrlMap(entries: LegacyEntry[]) {
+  const links = new Map<string, string>();
+
+  for (const entry of entries) {
+    const localUrl = localUrlForEntry(entry);
+    for (const legacyUrl of [entry.data.originalUrl, entry.data.legacyPath]) {
+      const key = legacyUrlKey(legacyUrl);
+      if (key) links.set(key, localUrl);
+    }
+  }
+
+  return links;
+}
+
+function rewriteContentUrl(value: string, legacyUrlMap: ReadonlyMap<string, string>) {
+  const key = legacyUrlKey(value);
+  if (key) {
+    return legacyUrlMap.get(key) || withBase(key);
+  }
+
+  if (/^\/(?!\/)/.test(value)) return withBase(value);
+
+  return value;
+}
+
+export function contentHtml(entry: { rendered?: { html?: string } }, legacyUrlMap: ReadonlyMap<string, string> = new Map()) {
+  const html = (entry.rendered?.html || '').replace(/\b(src|href)=(['"])([^'"]*)\2/g, (_match, attribute, quote, value) => {
+    return `${attribute}=${quote}${rewriteContentUrl(value, legacyUrlMap)}${quote}`;
   });
+
+  return html.replace(wordpressUrlPattern, (value) => rewriteContentUrl(value, legacyUrlMap));
 }
 
 export function postUrl(entry: { id: string }) {

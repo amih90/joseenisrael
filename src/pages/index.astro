@@ -5,13 +5,14 @@ import { galleryImages } from '../data/gallery';
 import { site } from '../data/site';
 import { teamMembers } from '../data/team';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { assetPath, contentHtml, displayName, entrySlug, sortedByDate, withBase } from '../lib/content';
+import { assetPath, buildLegacyUrlMap, contentHtml, displayName, entrySlug, sortedByDate, withBase } from '../lib/content';
 
 const posts = sortedByDate(await getCollection('posts'));
 const latestPosts = posts.slice(0, 3);
 const pages = await getCollection('pages');
+const legacyUrlMap = buildLegacyUrlMap([...posts, ...pages]);
 const homePage = pages.find((page) => entrySlug(page) === 'home');
-const homeHtml = homePage ? contentHtml(homePage) : '';
+const homeHtml = homePage ? contentHtml(homePage, legacyUrlMap) : '';
 const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.82), rgba(20, 47, 45, 0.38)), url('${assetPath(site.heroImage)}')`;
 ---
 
