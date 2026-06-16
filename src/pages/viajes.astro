@@ -9,7 +9,6 @@ const tripPosts = posts.filter((post) => post.data.categories?.includes('Viajes'
 const [featuredTrip, ...otherTrips] = tripPosts;
 const heroImage = featuredTrip?.data.heroImage || site.heroImage;
 const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.88), rgba(20, 47, 45, 0.34)), url('${assetPath(heroImage)}')`;
-const places = [...new Set(tripPosts.flatMap((post) => post.data.categories || []).filter((category) => category !== 'Viajes' && category !== 'Sin categorizar'))];
 ---
 
 <BaseLayout title="Viajes" description="Rutas y experiencias por Israel con guias locales de habla hispana." image={heroImage}>
@@ -31,11 +30,6 @@ const places = [...new Set(tripPosts.flatMap((post) => post.data.categories || [
         <p class="eyebrow">Viajes disponibles</p>
         <h2>Elegir un recorrido</h2>
         <p>Cada ruta combina lugares, historia y detalles practicos para ayudarte a imaginar el proximo recorrido.</p>
-      </div>
-      <div class="trip-stats" aria-label="Resumen de viajes">
-        <div><strong>{tripPosts.length}</strong><span>rutas locales</span></div>
-        <div><strong>{places.length || 1}</strong><span>zonas destacadas</span></div>
-        <div><strong>1:1</strong><span>atencion directa</span></div>
       </div>
     </section>
 

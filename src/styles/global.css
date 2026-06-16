@@ -308,36 +308,13 @@ p {
 }
 
 .section--intro {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.7fr);
-  gap: 2rem;
-  align-items: center;
   background: var(--surface);
 }
 
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
-}
-
-.stat-grid div {
-  padding: 1.2rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #f8fbf8;
-}
-
-.stat-grid strong {
-  display: block;
-  color: var(--teal-dark);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 2.25rem;
-}
-
-.stat-grid span {
-  color: var(--muted);
-  font-weight: 700;
+.section--intro .section-heading,
+.trips-overview .section-heading {
+  max-width: 920px;
+  margin-bottom: 0;
 }
 
 .post-grid {
@@ -546,37 +523,7 @@ p {
 }
 
 .trips-overview {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
-  gap: 2rem;
-  align-items: center;
   background: var(--surface);
-}
-
-.trip-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-}
-
-.trip-stats div {
-  min-height: 8rem;
-  padding: 1.2rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: linear-gradient(180deg, #f8fbf8, var(--surface));
-}
-
-.trip-stats strong {
-  display: block;
-  color: var(--teal-dark);
-  font-family: "Fraunces", Georgia, serif;
-  font-size: 2.1rem;
-}
-
-.trip-stats span {
-  color: var(--muted);
-  font-weight: 800;
 }
 
 .featured-trip-section {
@@ -914,7 +861,6 @@ p {
     font-size: 2rem;
   }
 
-  .section--intro,
   .trips-overview,
   .taxonomy-panel,
   .team-band,
@@ -996,8 +942,6 @@ p {
 
   .post-grid,
   .trip-card-grid,
-  .trip-stats,
-  .stat-grid,
   .team-grid,
   .gallery-preview,
   .masonry-gallery {
