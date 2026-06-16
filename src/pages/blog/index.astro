@@ -1,23 +1,39 @@
 ---
 import { getCollection } from 'astro:content';
 import PostCard from '../../components/PostCard.astro';
+import { site } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { sortedByDate } from '../../lib/content';
+import { assetPath, categoryUrl, sortedByDate, tagUrl } from '../../lib/content';
 
 const posts = sortedByDate(await getCollection('posts'));
-const categories = [...new Set(posts.flatMap((post) => post.data.categories || []))].sort();
+const categories = [...new Set(posts.flatMap((post) => post.data.categories || []))].filter((category) => category !== 'Sin categorizar').sort();
+const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+const heroStyle = `--page-hero-image: url('${assetPath(site.heroImage)}')`;
 ---
 
-<BaseLayout title="Blog" description="Relatos y rutas migradas desde Jos en Israel.">
+<BaseLayout title="Blog" description="Relatos, lugares y rutas de Jos en Israel.">
   <main>
-    <section class="page-hero page-hero--compact">
+    <section class="page-hero page-hero--compact page-hero--image" style={heroStyle}>
       <p class="eyebrow">Blog</p>
       <h1>Relatos de viaje por Israel</h1>
-      <p>Archivo completo de articulos, lugares y recorridos del sitio WordPress original.</p>
+      <p>Ideas, lugares santos, ciudades y recorridos para descubrir Israel con una mirada cercana.</p>
     </section>
-    <section class="section">
-      <div class="filter-row">
-        {categories.map((category) => <span>{category}</span>)}
+    <section class="section taxonomy-section">
+      <div class="taxonomy-panel">
+        <div class="taxonomy-group">
+          <p class="eyebrow">Categorias</p>
+          <div class="filter-row">
+            {categories.map((category) => <a href={categoryUrl(category)}>{category}</a>)}
+          </div>
+        </div>
+        {tags.length > 0 && (
+          <div class="taxonomy-group">
+            <p class="eyebrow">Temas</p>
+            <div class="filter-row">
+              {tags.map((tag) => <a href={tagUrl(tag)}>{tag}</a>)}
+            </div>
+          </div>
+        )}
       </div>
       <div class="post-grid">
         {posts.map((post) => <PostCard post={post} />)}

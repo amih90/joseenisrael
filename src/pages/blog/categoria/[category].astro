@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../../components/PostCard.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { sortedByDate, taxonomySlug, withBase } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = sortedByDate(await getCollection('posts'));
+  const categories = [...new Set(posts.flatMap((post) => post.data.categories || []))].filter((category) => category !== 'Sin categorizar');
+
+  return categories.map((category) => ({
+    params: { category: taxonomySlug(category) },
+    props: {
+      category,
+      posts: posts.filter((post) => post.data.categories?.includes(category)),
+    },
+  }));
+}
+
+const { category, posts } = Astro.props;
+---
+
+<BaseLayout title={`Categoria: ${category}`} description={`Relatos de Jos en Israel sobre ${category}.`}>
+  <main>
+    <section class="page-hero page-hero--compact taxonomy-hero">
+      <p class="eyebrow">Categoria</p>
+      <h1>{category}</h1>
+      <p>{posts.length} relato{posts.length === 1 ? '' : 's'} para explorar este tema.</p>
+      <div class="hero__actions">
+        <a class="button button--secondary" href={withBase('/blog/')}>Volver al blog</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="post-grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

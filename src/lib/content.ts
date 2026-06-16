@@ -82,6 +82,24 @@ export function postUrl(entry: { id: string }) {
   return withBase(`/blog/${entrySlug(entry)}/`);
 }
 
+export function taxonomySlug(value: string) {
+  return value
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/&/g, ' y ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'tema';
+}
+
+export function categoryUrl(value: string) {
+  return withBase(`/blog/categoria/${taxonomySlug(value)}/`);
+}
+
+export function tagUrl(value: string) {
+  return withBase(`/blog/tag/${taxonomySlug(value)}/`);
+}
+
 export function pageUrl(entry: { id: string }) {
   const slug = entrySlug(entry);
   return withBase(slug === 'home' ? '/' : `/${slug}/`);

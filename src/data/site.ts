@@ -10,5 +10,5 @@ export const site = {
   "email": "joseholl2014@gmail.com",
   "facebook": "https://www.facebook.com/JosEnIsrael",
   "instagram": "https://www.instagram.com/jose_hollander/",
-  "heroImage": "/wp-content/uploads/2021/09/20200222_135321-%D7%A2%D7%95%D7%AA%D7%A7-2.jpg"
+  "heroImage": "/wp-content/uploads/2021/08/20191122093203_IMG_5053-scaled.jpg"
 } as const;

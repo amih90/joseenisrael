@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import PostCard from '../../../components/PostCard.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { sortedByDate, taxonomySlug, withBase } from '../../../lib/content';
+
+export async function getStaticPaths() {
+  const posts = sortedByDate(await getCollection('posts'));
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+
+  return tags.map((tag) => ({
+    params: { tag: taxonomySlug(tag) },
+    props: {
+      tag,
+      posts: posts.filter((post) => post.data.tags?.includes(tag)),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<BaseLayout title={`Tema: ${tag}`} description={`Relatos de Jos en Israel sobre ${tag}.`}>
+  <main>
+    <section class="page-hero page-hero--compact taxonomy-hero">
+      <p class="eyebrow">Tema</p>
+      <h1>{tag}</h1>
+      <p>{posts.length} relato{posts.length === 1 ? '' : 's'} relacionado{posts.length === 1 ? '' : 's'}.</p>
+      <div class="hero__actions">
+        <a class="button button--secondary" href={withBase('/blog/')}>Volver al blog</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="post-grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>

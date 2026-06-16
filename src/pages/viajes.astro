@@ -18,7 +18,7 @@ const places = [...new Set(tripPosts.flatMap((post) => post.data.categories || [
       <div class="trips-hero__content">
         <p class="eyebrow">Viajes por Israel</p>
         <h1>Rutas con historia, presencia y cercania</h1>
-        <p>Recorridos migrados del sitio original, ahora organizados como una experiencia estatica y limpia para explorar cada relato dentro del sitio.</p>
+        <p>Recorridos pensados para familias, grupos y viajeros que quieren caminar los lugares con contexto, calma y guia local.</p>
         <div class="hero__actions">
           <a class="button button--primary" href={site.whatsapp}>Planear por WhatsApp</a>
           {featuredTrip && <a class="button button--light" href={postUrl(featuredTrip)}>Ver ruta destacada</a>}
@@ -28,14 +28,14 @@ const places = [...new Set(tripPosts.flatMap((post) => post.data.categories || [
 
     <section class="section trips-overview">
       <div class="section-heading">
-        <p class="eyebrow">Archivo de viajes</p>
+        <p class="eyebrow">Viajes disponibles</p>
         <h2>Elegir un recorrido</h2>
-        <p>Cada tarjeta abre una pagina local del sitio estatico, sin saltar al WordPress original.</p>
+        <p>Cada ruta combina lugares, historia y detalles practicos para ayudarte a imaginar el proximo recorrido.</p>
       </div>
       <div class="trip-stats" aria-label="Resumen de viajes">
         <div><strong>{tripPosts.length}</strong><span>rutas locales</span></div>
         <div><strong>{places.length || 1}</strong><span>zonas destacadas</span></div>
-        <div><strong>100%</strong><span>links internos</span></div>
+        <div><strong>1:1</strong><span>atencion directa</span></div>
       </div>
     </section>
 

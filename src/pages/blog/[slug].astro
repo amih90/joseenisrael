@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import PostCard from '../../components/PostCard.astro';
 import { site } from '../../data/site';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { assetPath, buildLegacyUrlMap, contentHtml, entrySlug, formatDate, sortedByDate } from '../../lib/content';
+import { assetPath, buildLegacyUrlMap, categoryUrl, contentHtml, entrySlug, formatDate, sortedByDate, tagUrl } from '../../lib/content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -16,6 +16,8 @@ const pages = await getCollection('pages');
 const legacyUrlMap = buildLegacyUrlMap([...allPosts, ...pages]);
 const postHtml = contentHtml(post, legacyUrlMap);
 const relatedPosts = allPosts.filter((item) => item.id !== post.id).slice(0, 3);
+const categories = post.data.categories?.filter((category) => category !== 'Sin categorizar') || [];
+const tags = post.data.tags || [];
 ---
 
 <BaseLayout title={post.data.title} description={post.data.description || site.description} image={post.data.heroImage || site.heroImage}>
@@ -32,8 +34,18 @@ const relatedPosts = allPosts.filter((item) => item.id !== post.id).slice(0, 3);
       <div class="article-shell">
         <aside class="article-meta">
           {post.data.author && <p><strong>Autor</strong><span>{post.data.author}</span></p>}
-          {post.data.categories?.length > 0 && <p><strong>Categoria</strong><span>{post.data.categories.join(', ')}</span></p>}
-          {post.data.tags?.length > 0 && <p><strong>Tags</strong><span>{post.data.tags.join(', ')}</span></p>}
+          {categories.length > 0 && (
+            <p>
+              <strong>Categorias</strong>
+              <span class="taxonomy-links">{categories.map((category) => <a href={categoryUrl(category)}>{category}</a>)}</span>
+            </p>
+          )}
+          {tags.length > 0 && (
+            <p>
+              <strong>Temas</strong>
+              <span class="taxonomy-links">{tags.map((tag) => <a href={tagUrl(tag)}>{tag}</a>)}</span>
+            </p>
+          )}
         </aside>
         <div class="prose article-body">
           <Fragment set:html={postHtml} />

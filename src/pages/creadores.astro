@@ -3,14 +3,16 @@ import { site } from '../data/site';
 import { teamMembers } from '../data/team';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { assetPath, displayName } from '../lib/content';
+
+const heroStyle = `--page-hero-image: url('${assetPath(site.heroImage)}')`;
 ---
 
 <BaseLayout title="Creadores" description="Equipo de Jos en Israel.">
   <main>
-    <section class="page-hero page-hero--compact">
+    <section class="page-hero page-hero--compact page-hero--image" style={heroStyle}>
       <p class="eyebrow">Creadores</p>
       <h1>El equipo detras de los recorridos</h1>
-      <p>Perfiles migrados desde el sitio original y listos para ampliar con biografias completas.</p>
+      <p>Guias locales de habla hispana para preparar recorridos personales, familiares y grupales.</p>
     </section>
     <section class="section team-grid">
       {teamMembers.map((member) => (

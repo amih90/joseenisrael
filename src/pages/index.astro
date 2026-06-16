@@ -5,20 +5,53 @@ import { galleryImages } from '../data/gallery';
 import { site } from '../data/site';
 import { teamMembers } from '../data/team';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { assetPath, buildLegacyUrlMap, contentHtml, displayName, entrySlug, sortedByDate, withBase } from '../lib/content';
+import { assetPath, displayName, sortedByDate, withBase } from '../lib/content';
 
 const posts = sortedByDate(await getCollection('posts'));
 const latestPosts = posts.slice(0, 3);
-const pages = await getCollection('pages');
-const legacyUrlMap = buildLegacyUrlMap([...posts, ...pages]);
-const homePage = pages.find((page) => entrySlug(page) === 'home');
-const homeHtml = homePage ? contentHtml(homePage, legacyUrlMap) : '';
-const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.82), rgba(20, 47, 45, 0.38)), url('${assetPath(site.heroImage)}')`;
+const homepageSlides = [
+  {
+    src: site.heroImage,
+    alt: 'Jose mirando hacia Jerusalem y el Domo de la Roca',
+  },
+  {
+    src: '/wp-content/uploads/2021/08/20191115163048_IMG_4914-scaled.jpg',
+    alt: 'Vista panoramica de Jerusalem',
+  },
+  {
+    src: '/wp-content/uploads/2021/09/20210329_064129-scaled.jpg',
+    alt: 'Paisaje historico de Israel al amanecer',
+  },
+  {
+    src: '/wp-content/uploads/2021/09/20210925_152755-scaled.jpg',
+    alt: 'Grupo recorriendo lugares historicos de Israel',
+  },
+  {
+    src: '/wp-content/uploads/2021/10/20210403_103959-1-scaled-e1633757302798.jpg',
+    alt: 'Paisaje abierto de Tierra Santa',
+  },
+  {
+    src: '/wp-content/uploads/2021/10/20211015_124810-scaled.jpg',
+    alt: 'Recorrido por Israel con guia local',
+  },
+];
 ---
 
-<BaseLayout title={site.name} description={site.description} image={site.heroImage}>
+<BaseLayout title={site.name} description={site.description} image={homepageSlides[0].src}>
   <main>
-    <section class="hero" style={heroStyle}>
+    <section class="hero hero--slider" aria-label="Imagenes destacadas de Jos en Israel">
+      <div class="hero-slider" aria-hidden="true">
+        {homepageSlides.map((slide, index) => (
+          <img
+            class="hero-slide"
+            src={assetPath(slide.src)}
+            alt=""
+            loading={index === 0 ? 'eager' : 'lazy'}
+            style={`--slide-delay: ${index * 6}s`}
+          />
+        ))}
+      </div>
+      <div class="hero__overlay"></div>
       <div class="hero__content">
         <p class="eyebrow">Guias locales en Tierra Santa</p>
         <h1>Viajes por Israel con mirada cercana</h1>
@@ -28,17 +61,20 @@ const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.8
           <a class="button button--light" href={withBase('/viajes/')}>Ver viajes</a>
         </div>
       </div>
+      <div class="hero-slider__dots" aria-hidden="true">
+        {homepageSlides.map((_slide, index) => <span class="hero-slider__dot" style={`--slide-delay: ${index * 6}s`}></span>)}
+      </div>
     </section>
 
     <section class="section section--intro">
       <div class="section-heading">
-        <p class="eyebrow">Contenido migrado</p>
-        <h2>Historias, rutas y lugares santos del sitio original</h2>
+        <p class="eyebrow">Tierra Santa en espanol</p>
+        <h2>Historias, rutas y lugares santos para preparar tu viaje</h2>
       </div>
       <div class="stat-grid">
-        <div><strong>{posts.length}</strong><span>articulos</span></div>
-        <div><strong>{galleryImages.length}</strong><span>imagenes destacadas</span></div>
-        <div><strong>{teamMembers.length}</strong><span>creadores</span></div>
+        <div><strong>{posts.length}</strong><span>relatos</span></div>
+        <div><strong>{galleryImages.length}</strong><span>imagenes</span></div>
+        <div><strong>{teamMembers.length}</strong><span>guias</span></div>
       </div>
     </section>
 
@@ -84,18 +120,6 @@ const heroStyle = `background-image: linear-gradient(90deg, rgba(20, 47, 45, 0.8
         ))}
       </div>
     </section>
-
-    {homeHtml && (
-      <section class="section content-section">
-        <div class="section-heading">
-          <p class="eyebrow">Archivo original</p>
-          <h2>Mas contenido de portada</h2>
-        </div>
-        <div class="prose">
-          <Fragment set:html={homeHtml} />
-        </div>
-      </section>
-    )}
 
     <section class="section contact-band">
       <div>
